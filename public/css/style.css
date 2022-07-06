@@ -82,6 +82,13 @@ h6 {
 }
 
 /*--------------------*/
+.advantage h2, .result-block h2 {
+  margin: 5rem 0;
+  font-size: 55px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .page {
   width: 100%;
   background-color: #fff7ea;
@@ -184,12 +191,6 @@ main .main-info__right-2 {
 .result-block {
   margin: 0 10rem;
 }
-.result-block h2 {
-  margin: 5rem 0;
-  font-size: 55px;
-  text-align: center;
-  text-transform: uppercase;
-}
 .result-block .section {
   display: flex;
   justify-content: space-between;
@@ -205,5 +206,26 @@ main .main-info__right-2 {
 }
 .result-block .section__left-side p {
   font-family: Raleway;
+  font-size: 18px;
+}
+
+.advantage {
+  margin: 0 10rem;
+}
+.advantage__flex-section {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+.advantage__flex-section_right-side {
+  margin-left: 2rem;
+  max-width: 750px;
+}
+.advantage__flex-section_right-side h3 {
+  margin-bottom: 2rem;
+  font-size: 31px;
+  color: #856d47;
+}
+.advantage__flex-section_right-side p {
   font-size: 18px;
 }

@@ -83,10 +83,19 @@ $fsh2: 55px;
 $fsh3: 31px;
 $fsp: 18px;
 
+%h2 {
+    margin: 5rem 0;
+
+    font-size: $fsh2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .page {
     width: 100%;
     background-color: $cwhite;
 }
 
-@import 'main-block.scss';
-@import 'result-block.scss';
+@import 'main-block';
+@import 'result-block';
+@import 'advantage-block';
