@@ -32,7 +32,6 @@ body {
   height: 100%;
   width: 100%;
   font-size: 100%;
-  line-height: 1;
   font-size: 14px;
 }
 
@@ -85,13 +84,13 @@ h6 {
 /*--------------------*/
 .page {
   width: 100%;
-  height: auto;
+  background-color: #fff7ea;
 }
 
 main {
   padding: 14rem 0 0 10rem;
-  height: 100vh;
-  background-image: linear-gradient(90deg, rgba(255, 247, 234, 0.996031689) 0%, rgba(255, 247, 234, 0.55) 100%), url(/images/bg.jpg?73c4f31fb9286fc892ec7b239b8d8e6f);
+  margin-bottom: 10rem;
+  background-image: linear-gradient(90deg, rgba(255, 247, 234, 0.996031689) 0%, rgba(255, 247, 234, 0.55) 100%), linear-gradient(180deg, rgba(255, 247, 234, 0.05) 0%, rgba(255, 247, 234, 0.99) 100%), url(/images/bg.webp?12264728a6fc719fbf9e09f2ba43705d);
   background-size: cover;
 }
 main h1 {
@@ -180,4 +179,31 @@ main .main-info__right-1::before {
 }
 main .main-info__right-2 {
   font-weight: 700;
+}
+
+.result-block {
+  margin: 0 10rem;
+}
+.result-block h2 {
+  margin: 5rem 0;
+  font-size: 55px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.result-block .section {
+  display: flex;
+  justify-content: space-between;
+}
+.result-block .section__left-side {
+  max-width: 458px;
+}
+.result-block .section__left-side h3 {
+  margin-bottom: 2rem;
+  font-family: Bitter;
+  font-size: 31px;
+  color: #856d47;
+}
+.result-block .section__left-side p {
+  font-family: Raleway;
+  font-size: 18px;
 }

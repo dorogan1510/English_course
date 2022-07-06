@@ -1,0 +1,137 @@
+main {
+    padding: 14rem 0 0 10rem;
+    margin-bottom: 10rem;
+
+    background-image: linear-gradient(
+            90deg,
+            rgba(255, 247, 234, 0.9960316890428046) 0%,
+            rgba(255, 247, 234, 0.55) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(255, 247, 234, 0.05) 0%,
+            rgba(255, 247, 234, 0.99) 100%
+        ),
+        url('../img/bg.webp');
+    background-size: cover;
+
+    h1 {
+        margin-bottom: 2rem;
+
+        font-family: $ff1;
+        font-size: 3.5rem;
+        font-weight: 400;
+
+        max-width: 676px;
+    }
+
+    .main-p {
+        margin-bottom: 5rem;
+
+        font-family: $ff2;
+        font-size: 2rem;
+
+        max-width: 539px;
+
+        color: $cgray;
+    }
+
+    button {
+        transition: 0.3s;
+
+        margin-right: 2rem;
+        margin-bottom: 5rem;
+
+        font-family: $ff2;
+        font-size: 18px;
+        font-weight: bold;
+
+        color: #fff;
+        background-color: $cgray;
+
+        width: 250px;
+        height: 55px;
+
+        border-radius: 25px;
+        border: 0;
+
+        &:hover {
+            transition: 0.3s;
+            color: $cgray;
+            background-color: #deddcd;
+        }
+    }
+    .main-info {
+        display: flex;
+        justify-content: space-between;
+
+        max-width: 525px;
+        height: 174px;
+
+        background-color: $cgray;
+        border-radius: 25px;
+
+        &__left {
+            font-family: $ff2;
+            font-size: 18px;
+
+            text-align: center;
+
+            padding: 40px 60px;
+
+            color: #fff;
+
+            &-1 {
+                position: relative;
+
+                margin-bottom: 3rem;
+
+                &::before {
+                    position: absolute;
+                    top: 40px;
+                    right: -25px;
+
+                    content: '';
+                    width: 156px;
+                    height: 1px;
+                    background-color: #fff;
+                }
+            }
+
+            &-2 {
+                font-weight: 700;
+            }
+        }
+
+        &__right {
+            font-family: $ff2;
+            font-size: 18px;
+
+            text-align: center;
+
+            padding: 40px 60px;
+
+            color: #fff;
+
+            &-1 {
+                position: relative;
+
+                margin-bottom: 3rem;
+
+                &::before {
+                    position: absolute;
+                    top: 40px;
+                    right: -20px;
+
+                    content: '';
+                    width: 156px;
+                    height: 1px;
+                    background-color: #fff;
+                }
+            }
+            &-2 {
+                font-weight: 700;
+            }
+        }
+    }
+}
