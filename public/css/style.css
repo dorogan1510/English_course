@@ -82,7 +82,7 @@ h6 {
 }
 
 /*--------------------*/
-.know-better h2, .why-course h2, .advantage h2, .result-block h2 {
+.how-course-works h2, .video h2, .know-better h2, .why-course h2, .advantage h2, .result-block h2 {
   margin: 5rem 0;
   font-size: 55px;
   text-align: center;
@@ -288,4 +288,55 @@ main .main-info__right-2 {
 .know-better__flex-right li {
   list-style: inside;
   margin-bottom: 2rem;
+}
+
+.video iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.how-course-works {
+  margin: 0 10rem;
+}
+.how-course-works__flex {
+  position: relative;
+  display: flex;
+  margin: 0 0 3rem 10rem;
+}
+.how-course-works__flex-number {
+  margin-right: 2rem;
+  min-width: 44px;
+  max-height: 44px;
+  text-align: center;
+  font-family: Bitter;
+  font-size: 31px;
+  color: #fff;
+  background-color: #856d47;
+  border-radius: 50%;
+}
+.how-course-works__flex h3 {
+  margin-bottom: 1rem;
+  font-family: Bitter;
+  font-size: 31px;
+  color: #856d47;
+}
+.how-course-works__flex p {
+  max-width: 800px;
+  font-family: Raleway;
+  font-size: 18px;
+}
+.how-course-works .warning {
+  padding-top: 30px;
+}
+.how-course-works .warning-number {
+  margin-right: 2rem;
+  min-width: 50px;
+  max-height: 50px;
+  text-align: center;
+  font-family: Bitter;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #856d47;
+  border-radius: 50%;
 }
