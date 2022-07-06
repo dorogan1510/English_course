@@ -82,7 +82,7 @@ h6 {
 }
 
 /*--------------------*/
-.advantage h2, .result-block h2 {
+.know-better h2, .why-course h2, .advantage h2, .result-block h2 {
   margin: 5rem 0;
   font-size: 55px;
   text-align: center;
@@ -223,9 +223,69 @@ main .main-info__right-2 {
 }
 .advantage__flex-section_right-side h3 {
   margin-bottom: 2rem;
+  font-family: Bitter;
   font-size: 31px;
   color: #856d47;
 }
 .advantage__flex-section_right-side p {
+  font-family: Raleway;
   font-size: 18px;
+}
+
+.why-course {
+  margin: 0 10rem;
+}
+.why-course__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.why-course__flex-item {
+  width: 33.33%;
+  margin: 0 30px;
+}
+.why-course__flex-item h3 {
+  margin-bottom: 2rem;
+  font-family: Bitter;
+  font-size: 31px;
+  text-align: center;
+  color: #856d47;
+}
+.why-course__flex-item p {
+  font-family: Raleway;
+  font-size: 18px;
+}
+.why-course__flex-line {
+  border-left: 2px solid #856d47;
+  height: 250px;
+}
+
+.know-better {
+  margin: 0 10rem;
+}
+.know-better__flex {
+  display: flex;
+}
+.know-better__flex-right {
+  margin-left: 4rem;
+}
+.know-better__flex-right h3 {
+  margin-bottom: 2rem;
+  font-size: 55px;
+  text-align: center;
+}
+.know-better__flex-right p {
+  margin-bottom: 2rem;
+  font-family: Raleway;
+  font-size: 18px;
+  text-align: center;
+  color: #856d47;
+}
+.know-better__flex-right ul {
+  max-width: 615px;
+  font-family: Raleway;
+  font-size: 18px;
+}
+.know-better__flex-right li {
+  list-style: inside;
+  margin-bottom: 2rem;
 }

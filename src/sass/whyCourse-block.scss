@@ -1,25 +1,23 @@
-.advantage {
+.why-course {
     margin: 0 10rem;
 
     h2 {
         @extend %h2;
     }
 
-    &__flex-section {
-        margin-bottom: 40px;
-
+    &__flex {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
-        &_right-side {
-            margin-left: 2rem;
-            max-width: 750px;
-
+        &-item {
+            width: 33.33%;
+            margin: 0 30px;
             h3 {
                 margin-bottom: 2rem;
 
                 font-family: $ff1;
                 font-size: $fsh3;
+                text-align: center;
                 color: $cgray;
             }
 
@@ -27,6 +25,11 @@
                 font-family: $ff2;
                 font-size: $fsp;
             }
+        }
+
+        &-line {
+            border-left: 2px solid $cgray;
+            height: 250px;
         }
     }
 }
