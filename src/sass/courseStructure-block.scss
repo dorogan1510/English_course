@@ -1,0 +1,53 @@
+.course-structure {
+    h2 {
+        @extend %h2;
+    }
+
+    &__flex {
+        display: flex;
+
+        margin-bottom: 5rem;
+
+        &-left {
+            margin-right: 60px;
+
+            width: 100px;
+
+            font-family: $ff1;
+            font-size: $fsh3;
+            color: $cgray;
+
+            flex-grow: 1;
+        }
+
+        &-center {
+            margin-right: 30px;
+
+            width: 100px;
+
+            font-family: $ff2;
+            font-size: $fsp;
+
+            flex-grow: 6;
+        }
+
+        &-right {
+            width: 100px;
+
+            font-family: $ff1;
+            font-size: $fsh3;
+            color: $cgray;
+
+            flex-grow: 1;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        li {
+            list-style: inside;
+            margin-bottom: 1rem;
+        }
+    }
+}

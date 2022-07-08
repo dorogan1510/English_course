@@ -1,0 +1,47 @@
+.free-module {
+    h2 {
+        @extend %h2;
+    }
+
+    p {
+        margin-bottom: 70px;
+
+        font-family: $ff2;
+        font-size: 24px;
+
+        text-align: center;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        ol {
+            font-family: $ff2;
+            font-size: $fsp;
+            font-weight: 500;
+        }
+
+        button {
+            padding: 1rem;
+
+            background-color: $cgray;
+            font-family: $ff2;
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+
+            height: 70px;
+
+            border: 0;
+            border-radius: 30px;
+
+            &:hover {
+                transition: 0.3s;
+                color: $cgray;
+                background-color: #deddcd;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  line-height: 1.55;
 }
 
 *,
@@ -82,7 +83,7 @@ h6 {
 }
 
 /*--------------------*/
-.how-course-works h2, .video h2, .know-better h2, .why-course h2, .advantage h2, .result-block h2 {
+.course-price h2, .free-module h2, .course-program h2, .course-structure h2, .how-course-works h2, .video h2, .know-better h2, .why-course h2, .advantage h2, .result-block h2 {
   margin: 5rem 0;
   font-size: 55px;
   text-align: center;
@@ -95,26 +96,30 @@ h6 {
 }
 
 main {
+  margin: 0 10rem;
+}
+
+.start-block {
   padding: 14rem 0 0 10rem;
   margin-bottom: 10rem;
   background-image: linear-gradient(90deg, rgba(255, 247, 234, 0.996031689) 0%, rgba(255, 247, 234, 0.55) 100%), linear-gradient(180deg, rgba(255, 247, 234, 0.05) 0%, rgba(255, 247, 234, 0.99) 100%), url(/images/bg.webp?12264728a6fc719fbf9e09f2ba43705d);
   background-size: cover;
 }
-main h1 {
+.start-block h1 {
   margin-bottom: 2rem;
   font-family: Bitter;
   font-size: 3.5rem;
   font-weight: 400;
   max-width: 676px;
 }
-main .main-p {
+.start-block__p {
   margin-bottom: 5rem;
   font-family: Raleway;
   font-size: 2rem;
   max-width: 539px;
   color: #856d47;
 }
-main button {
+.start-block button {
   transition: 0.3s;
   margin-right: 2rem;
   margin-bottom: 5rem;
@@ -128,12 +133,12 @@ main button {
   border-radius: 25px;
   border: 0;
 }
-main button:hover {
+.start-block button:hover {
   transition: 0.3s;
   color: #856d47;
   background-color: #deddcd;
 }
-main .main-info {
+.start-block__info {
   display: flex;
   justify-content: space-between;
   max-width: 525px;
@@ -141,18 +146,18 @@ main .main-info {
   background-color: #856d47;
   border-radius: 25px;
 }
-main .main-info__left {
+.start-block__info-left {
   font-family: Raleway;
   font-size: 18px;
   text-align: center;
   padding: 40px 60px;
   color: #fff;
 }
-main .main-info__left-1 {
+.start-block__info-left1 {
   position: relative;
   margin-bottom: 3rem;
 }
-main .main-info__left-1::before {
+.start-block__info-left1::before {
   position: absolute;
   top: 40px;
   right: -25px;
@@ -161,21 +166,21 @@ main .main-info__left-1::before {
   height: 1px;
   background-color: #fff;
 }
-main .main-info__left-2 {
+.start-block__info-left2 {
   font-weight: 700;
 }
-main .main-info__right {
+.start-block__info-right {
   font-family: Raleway;
   font-size: 18px;
   text-align: center;
   padding: 40px 60px;
   color: #fff;
 }
-main .main-info__right-1 {
+.start-block__info-right1 {
   position: relative;
   margin-bottom: 3rem;
 }
-main .main-info__right-1::before {
+.start-block__info-right1::before {
   position: absolute;
   top: 40px;
   right: -20px;
@@ -184,13 +189,10 @@ main .main-info__right-1::before {
   height: 1px;
   background-color: #fff;
 }
-main .main-info__right-2 {
+.start-block__info-right2 {
   font-weight: 700;
 }
 
-.result-block {
-  margin: 0 10rem;
-}
 .result-block .section {
   display: flex;
   justify-content: space-between;
@@ -209,9 +211,6 @@ main .main-info__right-2 {
   font-size: 18px;
 }
 
-.advantage {
-  margin: 0 10rem;
-}
 .advantage__flex-section {
   margin-bottom: 40px;
   display: flex;
@@ -232,9 +231,6 @@ main .main-info__right-2 {
   font-size: 18px;
 }
 
-.why-course {
-  margin: 0 10rem;
-}
 .why-course__flex {
   display: flex;
   justify-content: space-between;
@@ -259,9 +255,6 @@ main .main-info__right-2 {
   height: 250px;
 }
 
-.know-better {
-  margin: 0 10rem;
-}
 .know-better__flex {
   display: flex;
 }
@@ -295,9 +288,6 @@ main .main-info__right-2 {
   margin: 0 auto;
 }
 
-.how-course-works {
-  margin: 0 10rem;
-}
 .how-course-works__flex {
   position: relative;
   display: flex;
@@ -339,4 +329,158 @@ main .main-info__right-2 {
   color: #fff;
   background-color: #856d47;
   border-radius: 50%;
+}
+
+.course-structure__flex {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.course-structure__flex-left {
+  margin-right: 60px;
+  width: 100px;
+  font-family: Bitter;
+  font-size: 31px;
+  color: #856d47;
+  flex-grow: 1;
+}
+.course-structure__flex-center {
+  margin-right: 30px;
+  width: 100px;
+  font-family: Raleway;
+  font-size: 18px;
+  flex-grow: 6;
+}
+.course-structure__flex-right {
+  width: 100px;
+  font-family: Bitter;
+  font-size: 31px;
+  color: #856d47;
+  flex-grow: 1;
+}
+.course-structure__flex p {
+  margin-bottom: 1rem;
+}
+.course-structure__flex li {
+  list-style: inside;
+  margin-bottom: 1rem;
+}
+
+.course-program hr {
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  height: 3px;
+  background-color: #856d47;
+}
+.course-program__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-program__flex-left {
+  font-family: Bitter;
+  font-size: 31px;
+  color: #856d47;
+  width: 70%;
+}
+.course-program__flex-right {
+  font-family: Raleway;
+  font-size: 18px;
+  width: 30%;
+}
+.course-program__flex li {
+  list-style: inside;
+  margin-bottom: 1rem;
+}
+
+.free-module p {
+  margin-bottom: 70px;
+  font-family: Raleway;
+  font-size: 24px;
+  text-align: center;
+}
+.free-module__flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.free-module__flex ol {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+}
+.free-module__flex button {
+  padding: 1rem;
+  background-color: #856d47;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  height: 70px;
+  border: 0;
+  border-radius: 30px;
+}
+.free-module__flex button:hover {
+  transition: 0.3s;
+  color: #856d47;
+  background-color: #deddcd;
+}
+
+.course-price h2 {
+  margin-bottom: 1rem;
+}
+.course-price p {
+  margin-bottom: 3rem;
+  font-family: Raleway;
+  font-size: 24px;
+  text-align: center;
+}
+.course-price__border {
+  margin: 0 auto;
+  max-width: 690px;
+  max-height: 335px;
+  border: 2px solid #856d47;
+  border-radius: 10px;
+}
+.course-price__border-first {
+  margin-top: 30px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.course-price__border-second {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+.course-price__border-third {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 31px;
+  font-weight: 600;
+}
+.course-price__border button {
+  transition: 0.3s;
+  display: block;
+  margin: 30px auto;
+  padding: 1rem;
+  background-color: #856d47;
+  font-family: Raleway;
+  font-size: 31px;
+  font-weight: 500;
+  color: #fff;
+  height: 70px;
+  border: 0;
+  border-radius: 30px;
+}
+.course-price__border button:hover {
+  transition: 0.3s;
+  color: #856d47;
+  background-color: #deddcd;
 }

@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;700&family=Raleway:wght@100;300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./public/css/style.css" />
@@ -16,11 +16,11 @@
     </head>
     <body>
         <div class="page">
-            <!-- START OF MAIN BLOCK -->
+            <!-- START OF START BLOCK -->
 
-            <main>
+            <div class="start-block">
                 <h1>Курс по английскому языку для начинающих</h1>
-                <p class="main-p">
+                <p class="start-block__p">
                     Для тех, кто мечтал начать учить английский, но так и не
                     решился
                 </p>
@@ -28,341 +28,540 @@
 
                 <button href="#" type="button">Начать сейчас</button>
 
-                <div class="main-info">
-                    <div class="main-info__left">
-                        <p class="main-info__left-1">Старт курса:</p>
-                        <p class="main-info__left-2">В процессе</p>
+                <div class="start-block__info">
+                    <div class="start-block__info-left">
+                        <p class="start-block__info-left1">Старт курса:</p>
+                        <p class="start-block__info-left2">В процессе</p>
                     </div>
-                    <div class="main-info__right">
-                        <p class="main-info__right-1">Длительность</p>
-                        <p class="main-info__right-2">6 недель</p>
+                    <div class="start-block__info-right">
+                        <p class="start-block__info-right1">Длительность</p>
+                        <p class="start-block__info-right2">6 недель</p>
                     </div>
                 </div>
-            </main>
-            <!-- END OF MAIN BLOCK -->
+            </div>
+            <!-- END OF START BLOCK -->
 
             <!-- START OF RESULT BLOCK -->
-            <div class="result-block">
-                <h2>Какой вы получите результат</h2>
+            <main>
+                <div class="result-block">
+                    <h2>Какой вы получите результат</h2>
 
-                <div class="section">
-                    <div class="section__left-side">
-                        <h3>Будете чувствовать себя комфортно в путешествии</h3>
-                        <p>
-                            Делайте заказы в кафе и ресторанах, расcкажите о
-                            своем местоположении и вызовите такси, забронируйте
-                            номер в отеле — все это с комфортом на английском
-                            языке.
-                        </p>
+                    <div class="section">
+                        <div class="section__left-side">
+                            <h3>
+                                Будете чувствовать себя комфортно в путешествии
+                            </h3>
+                            <p>
+                                Делайте заказы в кафе и ресторанах, расcкажите о
+                                своем местоположении и вызовите такси,
+                                забронируйте номер в отеле — все это с комфортом
+                                на английском языке.
+                            </p>
+                        </div>
+                        <div class="section__img">
+                            <img
+                                src="./src/img/section1.webp"
+                                width="650px"
+                                height="456px"
+                            />
+                        </div>
                     </div>
-                    <div class="section__img">
+                    <div class="section">
+                        <div class="section__left-side">
+                            <h3>Зарабатывайте больше</h3>
+                            <p>
+                                По статистике, российские специалисты со знанием
+                                английского зарабатывают на 44% больше, чем их
+                                коллеги без знания языка.
+                            </p>
+                        </div>
+                        <div class="section__img">
+                            <img
+                                src="./src/img/section2.webp"
+                                width="650px"
+                                height="456px"
+                            />
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section__left-side">
+                            <h3>Сможете рассказать о себе и узнать о других</h3>
+                            <p>
+                                Расскажите простыми словами о своей профессии,
+                                образовании, поделитесь своим хобби и узнайте то
+                                же самое о своём собеседнике — все это также на
+                                английском языке.
+                            </p>
+                        </div>
+                        <div class="section__img">
+                            <img
+                                src="./src/img/section3.webp"
+                                width="650px"
+                                height="456px"
+                            />
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section__left-side">
+                            <h3>Сделаете с ребенком домашку по английскому</h3>
+                            <p>
+                                Убьем двух зайцев сразу: Сэкономим деньги на
+                                репетиторе и время на выполнении домашнего
+                                задания.
+                            </p>
+                        </div>
+                        <div class="section__img">
+                            <img
+                                src="./src/img/section4.webp"
+                                width="650px"
+                                height="456px"
+                            />
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section__left-side">
+                            <h3>Преодолеете языковой барьер</h3>
+                            <p>
+                                Разговор с иностранцами больше не будет вызывать
+                                тахикардию и потные ладошки.
+                            </p>
+                        </div>
+                        <div class="section__img">
+                            <img
+                                src="./src/img/section5.webp"
+                                width="650px"
+                                height="456px"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF RESULT BLOCK -->
+
+                <!-- START OF ADVANTAGE BLOCK -->
+                <div class="advantage">
+                    <h2>И в чем же наше преимущество?</h2>
+                    <div class="advantage__flex-section">
                         <img
-                            src="./src/img/section1.webp"
-                            width="650px"
-                            height="456px"
+                            src="./src/img/check1.svg"
+                            width="50px"
+                            height="50px"
                         />
+                        <div class="advantage__flex-section_right-side">
+                            <h3>Обучение в комфорте</h3>
+                            <p>
+                                Выберите для себя удобный день, время и место.
+                                Главное — пройти модуль в течение недели. Где и
+                                когда именно — решаете только вы.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="section__left-side">
-                        <h3>Зарабатывайте больше</h3>
-                        <p>
-                            По статистике, российские специалисты со знанием
-                            английского зарабатывают на 44% больше, чем их
-                            коллеги без знания языка.
-                        </p>
-                    </div>
-                    <div class="section__img">
+                    <div class="advantage__flex-section">
                         <img
-                            src="./src/img/section2.webp"
-                            width="650px"
-                            height="456px"
+                            src="./src/img/check1.svg"
+                            width="50px"
+                            height="50px"
                         />
+                        <div class="advantage__flex-section_right-side">
+                            <h3>Будьте на связи</h3>
+                            <p>
+                                После оплаты курса вы будете добавлены в наш
+                                общий чат в телеграме, где будут собраны все
+                                участники и куратор курса. Там же мы ответим на
+                                любые вопросы, которые могут возникнуть по мере
+                                прохождения курса.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="section__left-side">
-                        <h3>Сможете рассказать о себе и узнать о других</h3>
-                        <p>
-                            Расскажите простыми словами о своей профессии,
-                            образовании, поделитесь своим хобби и узнайте то же
-                            самое о своём собеседнике — все это также на
-                            английском языке.
-                        </p>
-                    </div>
-                    <div class="section__img">
+                    <div class="advantage__flex-section">
                         <img
-                            src="./src/img/section3.webp"
-                            width="650px"
-                            height="456px"
+                            src="./src/img/check1.svg"
+                            width="50px"
+                            height="50px"
                         />
+                        <div class="advantage__flex-section_right-side">
+                            <h3>Подробный разбор домашних заданий</h3>
+                            <p>
+                                На выходных будут проходить прямые трансляции с
+                                детальной проверкой домашних заданий каждого
+                                участника. Записи трансляций будут доступны в
+                                течение всего периода обучения, так что вы точно
+                                ничего не пропустите.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="section">
-                    <div class="section__left-side">
-                        <h3>Сделаете с ребенком домашку по английскому</h3>
-                        <p>
-                            Убьем двух зайцев сразу: Сэкономим деньги на
-                            репетиторе и время на выполнении домашнего задания.
-                        </p>
-                    </div>
-                    <div class="section__img">
+                    <div class="advantage__flex-section">
                         <img
-                            src="./src/img/section4.webp"
-                            width="650px"
-                            height="456px"
+                            src="./src/img/check1.svg"
+                            width="50px"
+                            height="50px"
                         />
+                        <div class="advantage__flex-section_right-side">
+                            <h3>Вечный доступ к урокам</h3>
+                            <p>
+                                Все материалы курса останутся с вами навсегда.
+                                При необходимости всегда будет возможность
+                                пересмотреть уроки и повторить пройденные темы.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="section">
-                    <div class="section__left-side">
-                        <h3>Преодолеете языковой барьер</h3>
-                        <p>
-                            Разговор с иностранцами больше не будет вызывать
-                            тахикардию и потные ладошки.
-                        </p>
+                <!-- END OF ADVANTAGE BLOCK -->
+
+                <!-- START OF WHY COURSE BLOCK -->
+                <div class="why-course">
+                    <h2>Почему курс, а не индивидуальные занятия</h2>
+                    <div class="why-course__flex">
+                        <div class="why-course__flex-item">
+                            <h3>Цена</h3>
+                            <p>
+                                Немного простой математики: 1 урок с репетитором
+                                стоит около 1000 рублей в час. Для прохождения
+                                всех тем из нашего курса понадобится 40 уроков и
+                                около 5 месяцев обучения с частным
+                                преподавателем. С нами ту же информацию вы
+                                получите за 1,5 месяца и 9900 рублей. Экономия
+                                на лицо.
+                            </p>
+                        </div>
+                        <div class="why-course__flex-line"></div>
+                        <div class="why-course__flex-item">
+                            <h3>Время</h3>
+                            <p>
+                                Не нужно подстраиваться под определенное время.
+                                Будьте мобильны. Проходите курс дома, на работе,
+                                смотрите уроки за чашкой кофе — в комфорте.
+                            </p>
+                        </div>
+                        <div class="why-course__flex-line"></div>
+                        <div class="why-course__flex-item">
+                            <h3>Материалы</h3>
+                            <p>
+                                Все материалы структурированы, а информация
+                                разложена по полочкам. Следуйте четкой программе
+                                курса и результат будет виден уже после первого
+                                модуля.
+                            </p>
+                        </div>
                     </div>
-                    <div class="section__img">
+                </div>
+                <!-- END OF WHY COURSE BLOCK -->
+
+                <!-- START OF KNOW BETTER BLOCK -->
+                <div class="know-better">
+                    <h2>А теперь давайте познакомимся поближе</h2>
+                    <div class="know-better__flex">
                         <img
-                            src="./src/img/section5.webp"
-                            width="650px"
-                            height="456px"
+                            src="./src/img/ksusha.webp"
+                            width="435px"
+                            height="580px"
                         />
+                        <div class="know-better__flex-right">
+                            <h3>Ксения Сухарева</h3>
+                            <p>Куратор курса</p>
+                            <ul>
+                                <li>
+                                    Преподаю языки с 2017 года, являюсь
+                                    сертифицированным преподавателем английского
+                                    языка по мировому стандарту TESOL.
+                                </li>
+                                <li>
+                                    Закончила Восточный факультет
+                                    Санкт-Петербургского государственного
+                                    университета, обучила более 100 учеников.
+                                </li>
+                                <li>
+                                    Главное для меня — комфорт каждого ученика
+                                    во время всего процесса обучения. Я
+                                    придерживаюсь этого принципа как на
+                                    индивидуальных занятиях, так и при создании
+                                    данного курса.
+                                </li>
+                                <li>
+                                    Работаю с четырьмя языками (английский,
+                                    французский, арабский, турецкий) и буду рада
+                                    помочь вам шаг за шагом осуществить свою
+                                    мечту заговорить на английском!
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- END OF RESULT BLOCK -->
+                <!-- END OF KNOW BETTER BLOCK -->
 
-            <!-- START OF ADVANTAGE BLOCK -->
-            <div class="advantage">
-                <h2>И в чем же наше преимущество?</h2>
-                <div class="advantage__flex-section">
-                    <img
-                        src="./src/img/check1.svg"
-                        width="50px"
-                        height="50px"
-                    />
-                    <div class="advantage__flex-section_right-side">
-                        <h3>Обучение в комфорте</h3>
-                        <p>
-                            Выберите для себя удобный день, время и место.
-                            Главное — пройти модуль в течение недели. Где и
-                            когда именно — решаете только вы.
-                        </p>
+                <!-- START OF VIDEO BLOCK -->
+                <div class="video">
+                    <h2>Настало время пробежаться по курсу</h2>
+                    <iframe
+                        width="900"
+                        height="500"
+                        src="https://www.youtube.com/embed/auU8IXf9SOI"
+                    >
+                    </iframe>
+                </div>
+                <!-- END OF VIDEO BLOCK -->
+
+                <!-- START OF HOW COURSE WORKS BLOCK -->
+                <div class="how-course-works">
+                    <h2>Как проходит курс</h2>
+
+                    <div class="how-course-works__flex">
+                        <div class="how-course-works__flex-number line">1</div>
+                        <div>
+                            <h3>Начало недели</h3>
+                            <p>
+                                Каждый понедельник вы получаете все материалы
+                                модуля.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="how-course-works__flex">
+                        <div class="how-course-works__flex-number">2</div>
+                        <div>
+                            <h3>В течение недели</h3>
+                            <p>
+                                С понедельника по пятницу в удобное для себя
+                                время вы просматриваете все уроки и выполняете
+                                домашние задания. К пятнице вы должны выполнить
+                                все домашние работы и переслать их в наш чат в
+                                телеграме.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="how-course-works__flex">
+                        <div class="how-course-works__flex-number">3</div>
+                        <div>
+                            <h3>Конец недели</h3>
+                            <p>
+                                В выходные дни будет проводиться прямая
+                                трансляция, на которой будет сделан подробный
+                                разбор домашних работ каждого участника (запись
+                                трансляции будет доступна для всех участников
+                                курса в любое время, вы сами выбираете смотреть
+                                её в онлайн режиме или в записи).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="how-course-works__flex warning">
+                        <div class="warning-number">!</div>
+                        <div>
+                            <p>
+                                Не стоит переживать, если во время прохождения
+                                модуля появятся вопросы или что-то останется
+                                непонятным — вы в любой момент можете написать
+                                куратору в чат, и мы всегда вам поможем.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="advantage__flex-section">
-                    <img
-                        src="./src/img/check1.svg"
-                        width="50px"
-                        height="50px"
-                    />
-                    <div class="advantage__flex-section_right-side">
-                        <h3>Будьте на связи</h3>
-                        <p>
-                            После оплаты курса вы будете добавлены в наш общий
-                            чат в телеграме, где будут собраны все участники и
-                            куратор курса. Там же мы ответим на любые вопросы,
-                            которые могут возникнуть по мере прохождения курса.
-                        </p>
+                <!-- END OF HOW COURSE WORKS BLOCK -->
+
+                <!-- START OF COURSE STRUCTURE BLOCK -->
+                <div class="course-structure">
+                    <h2>
+                        Что ж, хватит ходить вокруг да около, поговорим о
+                        начинке курса
+                    </h2>
+                    <h2>Структура курса</h2>
+
+                    <div class="course-structure__flex">
+                        <div class="course-structure__flex-left">Модули</div>
+                        <div class="course-structure__flex-center">
+                            Курс состоит из 6 модулей. Время на прохождение
+                            одного модуля – одна неделя. В каждом модуле
+                            содержится от 4 до 5 уроков.
+                        </div>
+                        <div class="course-structure__flex-right">01</div>
+                    </div>
+                    <div class="course-structure__flex">
+                        <div class="course-structure__flex-left">Уроки</div>
+                        <div class="course-structure__flex-center">
+                            <p>
+                                Длина урока от 5 до 30 минут. Урок состоит из:
+                            </p>
+                            <ul>
+                                <li>
+                                    видеоматериала с подробным и наглядным
+                                    объяснением темы;
+                                </li>
+                                <li>
+                                    словаря со всеми использованными в уроке
+                                    словами и их переводом;
+                                </li>
+                                <li>
+                                    аудиофайла, в котором содержится озвучка
+                                    всего словаря;
+                                </li>
+                                <li>домашнего задания.</li>
+                            </ul>
+                        </div>
+                        <div class="course-structure__flex-right">02</div>
+                    </div>
+
+                    <div class="course-structure__flex">
+                        <div class="course-structure__flex-left">
+                            Домашние задания
+                        </div>
+                        <div class="course-structure__flex-center">
+                            К каждому уроку идет домашнее задание в формате
+                            документа Word с упражнениями по уроку и примерами
+                            их выполнения. Сделанные работы необходимо отправить
+                            не позднее вечера пятницы, чтобы куратор успел их
+                            проверить до проведения трансляции.
+                        </div>
+                        <div class="course-structure__flex-right">03</div>
                     </div>
                 </div>
-                <div class="advantage__flex-section">
-                    <img
-                        src="./src/img/check1.svg"
-                        width="50px"
-                        height="50px"
-                    />
-                    <div class="advantage__flex-section_right-side">
-                        <h3>Подробный разбор домашних заданий</h3>
-                        <p>
-                            На выходных будут проходить прямые трансляции с
-                            детальной проверкой домашних заданий каждого
-                            участника. Записи трансляций будут доступны в
-                            течение всего периода обучения, так что вы точно
-                            ничего не пропустите.
-                        </p>
+                <!-- END OF COURSE STRUCTURE BLOCK -->
+
+                <!-- START OF COURSE PROGRAM BLOCK -->
+
+                <div class="course-program">
+                    <h2>Программа курса</h2>
+                    <hr />
+                    <div class="course-program__flex">
+                        <div class="course-program__flex-left">Модуль 1</div>
+                        <div class="course-program__flex-right">
+                            <ul>
+                                <li>Алфавит</li>
+                                <li>Правила чтения гласных</li>
+                                <li>Правила чтения согласных</li>
+                                <li>Различия в произношении похожих слов</li>
+                                <li>Цифры и числа в английском</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="course-program__flex">
+                        <div class="course-program__flex-left">Модуль 2</div>
+                        <div class="course-program__flex-right">
+                            <ul>
+                                <li>
+                                    Личные местоимения, глагол to be,
+                                    местонахождение (here, there)
+                                </li>
+                                <li>Артикли</li>
+                                <li>Притяжательные местоимения</li>
+                                <li>Указательные местоимения</li>
+                                <li>Изучение слов (Части тела и лица)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="course-program__flex">
+                        <div class="course-program__flex-left">Модуль 3</div>
+                        <div class="course-program__flex-right">
+                            <ul>
+                                <li>Present Simple</li>
+                                <li>Изучение слов (Одежда, ур. 1)</li>
+                                <li>Предлоги места и времени</li>
+                                <li>Множественное число</li>
+                                <li>
+                                    Изучение слов (Животные, еда и растения)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="course-program__flex">
+                        <div class="course-program__flex-left">Модуль 4</div>
+                        <div class="course-program__flex-right">
+                            <ul>
+                                <li>Present Continuous</li>
+                                <li>Способы обозначения времени</li>
+                                <li>Изучение слов (Дом и бытовые предметы)</li>
+                                <li>Инфинитивы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="course-program__flex">
+                        <div class="course-program__flex-left">Модуль 5</div>
+                        <div class="course-program__flex-right">
+                            <ul>
+                                <li>Future Simple</li>
+                                <li>Модальные глаголы Would, Could, Can</li>
+                                <li>Изучение слов (Путешествия)</li>
+                                <li>Изучение слов (Одежда, ур. 2)</li>
+                                <li>Конструкция There is, There are</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="course-program__flex">
+                        <div class="course-program__flex-left">Модуль 6</div>
+                        <div class="course-program__flex-right">
+                            <ul>
+                                <li>Past Simple</li>
+                                <li>Изучение слов (Работа и собеседование)</li>
+                                <li>Виды вопросительных слов</li>
+                                <li>Степени сравнения прилагательных</li>
+                                <li>Итоговый урок</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <!-- END OF COURSE PROGRAM BLOCK -->
+
+                <!-- START OF FREE MODULE BLOCK -->
+
+                <div class="free-module">
+                    <h2>
+                        Мы решили сделать первый модуль полностью бесплатным
+                    </h2>
+                    <p>
+                        Здесь нет домашних заданий, словарей и связи с
+                        куратором. Зато, вы получите 5 полноценных уроков по
+                        основам английского языка, а именно:
+                    </p>
+                    <div class="free-module__flex">
+                        <div class="free-module__flex-left">
+                            <ol>
+                                <li>Алфавит</li>
+                                <li>Правила чтения гласных</li>
+                                <li>Правила чтения согласных</li>
+                                <li>Различия в произношении похожих слов</li>
+                                <li>Цифры и числа в английском языке</li>
+                            </ol>
+                        </div>
+                        <button type="button">Получить первый модуль</button>
                     </div>
                 </div>
-                <div class="advantage__flex-section">
-                    <img
-                        src="./src/img/check1.svg"
-                        width="50px"
-                        height="50px"
-                    />
-                    <div class="advantage__flex-section_right-side">
-                        <h3>Вечный доступ к урокам</h3>
-                        <p>
-                            Все материалы курса останутся с вами навсегда. При
-                            необходимости всегда будет возможность пересмотреть
-                            уроки и повторить пройденные темы.
-                        </p>
+                <!-- END OF FREE MODULE BLOCK -->
+
+                <!-- START OF COURSE PRICE BLOCK -->
+
+                <div class="course-price">
+                    <h2>Стоимость курса</h2>
+                    <p>
+                        Оплатите курс до конца апреля и получите скидку 3000
+                        рублей
+                    </p>
+                    <div class="course-price__border">
+                        <div class="course-price__border-first">
+                            Обычная цена
+                        </div>
+                        <div class="course-price__border-second">12990 р.</div>
+                        <div class="course-price__border-third">9990 р.</div>
+                        <div class="course-price__border-third">
+                            Цена со скидкой
+                        </div>
+                        <button type="button">Приобрести курс</button>
                     </div>
                 </div>
-            </div>
-            <!-- END OF ADVANTAGE BLOCK -->
+                <!-- END OF COURSE PRICE BLOCK -->
 
-            <!-- START OF WHY COURSE BLOCK -->
-            <div class="why-course">
-                <h2>Почему курс, а не индивидуальные занятия</h2>
-                <div class="why-course__flex">
-                    <div class="why-course__flex-item">
-                        <h3>Цена</h3>
-                        <p>
-                            Немного простой математики: 1 урок с репетитором
-                            стоит около 1000 рублей в час. Для прохождения всех
-                            тем из нашего курса понадобится 40 уроков и около 5
-                            месяцев обучения с частным преподавателем. С нами ту
-                            же информацию вы получите за 1,5 месяца и 9900
-                            рублей. Экономия на лицо.
-                        </p>
-                    </div>
-                    <div class="why-course__flex-line"></div>
-                    <div class="why-course__flex-item">
-                        <h3>Время</h3>
-                        <p>
-                            Не нужно подстраиваться под определенное время.
-                            Будьте мобильны. Проходите курс дома, на работе,
-                            смотрите уроки за чашкой кофе — в комфорте.
-                        </p>
-                    </div>
-                    <div class="why-course__flex-line"></div>
-                    <div class="why-course__flex-item">
-                        <h3>Материалы</h3>
-                        <p>
-                            Все материалы структурированы, а информация
-                            разложена по полочкам. Следуйте четкой программе
-                            курса и результат будет виден уже после первого
-                            модуля.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- END OF WHY COURSE BLOCK -->
+                <!-- START OF BONUS BLOCK -->
+                <div class="bonus"></div>
+                <!-- END OF BONUS BLOCK -->
 
-            <!-- START OF KNOW BETTER BLOCK -->
-            <div class="know-better">
-                <h2>А теперь давайте познакомимся поближе</h2>
-                <div class="know-better__flex">
-                    <img src="./src/img/ksusha.webp" width="435px" />
-                    <div class="know-better__flex-right">
-                        <h3>Ксения Сухарева</h3>
-                        <p>Куратор курса</p>
-                        <ul>
-                            <li>
-                                Преподаю языки с 2017 года, являюсь
-                                сертифицированным преподавателем английского
-                                языка по мировому стандарту TESOL.
-                            </li>
-                            <li>
-                                Закончила Восточный факультет
-                                Санкт-Петербургского государственного
-                                университета, обучила более 100 учеников.
-                            </li>
-                            <li>
-                                Главное для меня — комфорт каждого ученика во
-                                время всего процесса обучения. Я придерживаюсь
-                                этого принципа как на индивидуальных занятиях,
-                                так и при создании данного курса.
-                            </li>
-                            <li>
-                                Работаю с четырьмя языками (английский,
-                                французский, арабский, турецкий) и буду рада
-                                помочь вам шаг за шагом осуществить свою мечту
-                                заговорить на английском!
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- END OF KNOW BETTER BLOCK -->
+                <!-- START OF QUESTIONS BLOCK -->
+                <!-- END OF QUESTIONS BLOCK -->
 
-            <!-- START OF VIDEO BLOCK -->
-            <div class="video">
-                <h2>Настало время пробежаться по курсу</h2>
-                <iframe
-                    width="900"
-                    height="500"
-                    src="https://www.youtube.com/embed/auU8IXf9SOI"
-                >
-                </iframe>
-            </div>
-            <!-- END OF VIDEO BLOCK -->
-
-            <!-- START OF HOW COURSE WORKS BLOCK -->
-            <div class="how-course-works">
-                <h2>Как проходит курс</h2>
-
-                <div class="how-course-works__flex">
-                    <div class="how-course-works__flex-number line">1</div>
-                    <div>
-                        <h3>Начало недели</h3>
-                        <p>
-                            Каждый понедельник вы получаете все материалы
-                            модуля.
-                        </p>
-                    </div>
-                </div>
-                <div class="how-course-works__flex">
-                    <div class="how-course-works__flex-number">2</div>
-                    <div>
-                        <h3>В течение недели</h3>
-                        <p>
-                            С понедельника по пятницу в удобное для себя время
-                            вы просматриваете все уроки и выполняете домашние
-                            задания. К пятнице вы должны выполнить все домашние
-                            работы и переслать их в наш чат в телеграме.
-                        </p>
-                    </div>
-                </div>
-                <div class="how-course-works__flex">
-                    <div class="how-course-works__flex-number">3</div>
-                    <div>
-                        <h3>Конец недели</h3>
-                        <p>
-                            В выходные дни будет проводиться прямая трансляция,
-                            на которой будет сделан подробный разбор домашних
-                            работ каждого участника (запись трансляции будет
-                            доступна для всех участников курса в любое время, вы
-                            сами выбираете смотреть её в онлайн режиме или в
-                            записи).
-                        </p>
-                    </div>
-                </div>
-                <div class="how-course-works__flex warning">
-                    <div class="warning-number">!</div>
-                    <div>
-                        <p>
-                            Не стоит переживать, если во время прохождения
-                            модуля появятся вопросы или что-то останется
-                            непонятным — вы в любой момент можете написать
-                            куратору в чат, и мы всегда вам поможем.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- END OF HOW COURSE WORKS BLOCK -->
-
-            <!-- START OF COURSE STRUCTURE BLOCK -->
-            <!-- END OF COURSE STRUCTURE BLOCK -->
-
-            <!-- START OF COURSE PROGRAM BLOCK -->
-            <!-- END OF COURSE PROGRAM BLOCK -->
-
-            <!-- START OF FREE MODULE BLOCK -->
-            <!-- END OF FREE MODULE BLOCK -->
-
-            <!-- START OF COURSE PRICE BLOCK -->
-            <!-- END OF COURSE PRICE BLOCK -->
-
-            <!-- START OF BONUS BLOCK -->
-            <!-- END OF BONUS BLOCK -->
-
-            <!-- START OF QUESTIONS BLOCK -->
-            <!-- END OF QUESTIONS BLOCK -->
-
-            <!-- START OF FOOTER BLOCK -->
-            <!-- END OF FOOTER BLOCK -->
+                <!-- START OF FOOTER BLOCK -->
+                <!-- END OF FOOTER BLOCK -->
+            </main>
         </div>
+        <!--end of class page-->
     </body>
 </html>

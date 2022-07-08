@@ -1,0 +1,78 @@
+.course-price {
+    h2 {
+        @extend %h2;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 3rem;
+
+        font-family: $ff2;
+        font-size: 24px;
+
+        text-align: center;
+    }
+
+    &__border {
+        margin: 0 auto;
+
+        max-width: 690px;
+        max-height: 335px;
+
+        border: 2px solid $cgray;
+        border-radius: 10px;
+
+        &-first {
+            margin-top: 30px;
+
+            text-align: center;
+            font-family: $ff2;
+            font-size: 24px;
+            font-weight: 300;
+
+            opacity: 0.8;
+        }
+        &-second {
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: $ff2;
+            font-size: 24px;
+            font-weight: 300;
+            text-decoration: line-through;
+
+            opacity: 0.8;
+        }
+
+        &-third {
+            text-align: center;
+            font-family: $ff2;
+            font-size: $fsh3;
+            font-weight: 600;
+        }
+
+        button {
+            transition: 0.3s;
+
+            display: block;
+            margin: 30px auto;
+            padding: 1rem;
+
+            background-color: $cgray;
+            font-family: $ff2;
+            font-size: $fsh3;
+            font-weight: 500;
+            color: #fff;
+
+            height: 70px;
+
+            border: 0;
+            border-radius: 30px;
+
+            &:hover {
+                transition: 0.3s;
+                color: $cgray;
+                background-color: #deddcd;
+            }
+        }
+    }
+}

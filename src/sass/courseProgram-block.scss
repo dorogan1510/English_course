@@ -1,0 +1,41 @@
+.course-program {
+    h2 {
+        @extend %h2;
+    }
+
+    hr {
+        display: block;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+
+        height: 3px;
+
+        background-color: $cgray;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+            font-family: $ff1;
+            font-size: $fsh3;
+            color: $cgray;
+
+            width: 70%;
+        }
+
+        &-right {
+            font-family: $ff2;
+            font-size: $fsp;
+
+            width: 30%;
+        }
+
+        li {
+            list-style: inside;
+            margin-bottom: 1rem;
+        }
+    }
+}

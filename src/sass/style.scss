@@ -2,6 +2,8 @@
 * {
     padding: 0;
     margin: 0;
+
+    line-height: 1.55;
 }
 *,
 *:before,
@@ -96,7 +98,11 @@ $fsp: 18px;
     background-color: $cwhite;
 }
 
-@import 'main-block';
+main {
+    margin: 0 10rem;
+}
+
+@import 'start-block';
 @import 'result-block';
 @import 'advantage-block';
 @import 'whyCourse-block';
