@@ -46,3 +46,24 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .free-module {
+        &__flex {
+            flex-direction: column;
+        }
+
+        p {
+            font-size: $mfsp;
+        }
+
+        a {
+            font-size: $mfsh3;
+        }
+
+        ol {
+            margin: 0 0 3rem 1rem;
+            font-size: $mfsp;
+        }
+    }
+}

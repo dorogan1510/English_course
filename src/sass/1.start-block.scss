@@ -36,12 +36,19 @@
         color: $cgray;
     }
 
+    #first-button {
+        margin-bottom: 2rem;
+    }
+
+    #second-button {
+        margin-bottom: 5rem;
+    }
+
     a {
         display: inline-block;
         transition: 0.3s;
 
         margin-right: 2rem;
-        margin-bottom: 5rem;
         padding: 1rem;
 
         font-family: $ff2;
@@ -158,14 +165,14 @@
     }
 
     .start-block__info {
-        max-width: 300px;
+        max-width: 250px;
         flex-direction: column;
     }
 
     .start-block__info-left1::before {
-        right: 10px;
+        right: -10px;
     }
     .start-block__info-right1::before {
-        right: 10px;
+        right: -10px;
     }
 }

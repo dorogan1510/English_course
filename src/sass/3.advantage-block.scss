@@ -28,3 +28,19 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .advantage {
+        h3 {
+            font-size: $mfsh3;
+        }
+
+        p {
+            font-size: $mfsp;
+        }
+
+        img {
+            width: 40px;
+        }
+    }
+}

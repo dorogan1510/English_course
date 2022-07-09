@@ -68,3 +68,31 @@
         width: 50%;
     }
 }
+@media (max-width: 768px) {
+    .bonus {
+        &__p {
+            font-size: $mfsp;
+        }
+
+        &__flex-item {
+            width: 100%;
+
+            &-shape {
+                width: 40px;
+                height: 40px;
+            }
+
+            &-number {
+                font-size: $mfsh3;
+            }
+
+            h3 {
+                font-size: $mfsh3;
+            }
+
+            p {
+                font-size: $mfsp;
+            }
+        }
+    }
+}

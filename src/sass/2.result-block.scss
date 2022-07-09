@@ -58,3 +58,20 @@
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    .result-block {
+        h3 {
+            font-size: $mfsh3;
+        }
+
+        p {
+            font-size: $mfsp;
+        }
+
+        &__flex-img {
+            max-width: 250px;
+            height: auto;
+        }
+    }
+}

@@ -15,3 +15,17 @@
         height: 500px;
     }
 }
+
+@media (max-width: 768px) {
+    .video__iframe {
+        max-width: 900px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 580px) {
+    .video__iframe {
+        max-width: 900px;
+        height: 150px;
+    }
+}

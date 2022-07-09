@@ -47,3 +47,25 @@
         width: 50%;
     }
 }
+
+@media (max-width: 768px) {
+    .course-program {
+        &__flex {
+            flex-direction: column;
+
+            &-left {
+                margin-bottom: 1rem;
+
+                font-size: $mfsh3;
+
+                width: 100%;
+            }
+
+            &-right {
+                font-size: $mfsp;
+
+                width: 100%;
+            }
+        }
+    }
+}

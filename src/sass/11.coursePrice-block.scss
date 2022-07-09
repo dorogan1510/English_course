@@ -16,7 +16,6 @@
         margin: 0 auto;
 
         max-width: 690px;
-        // max-height: 335px;
 
         border: 2px solid $cgray;
         border-radius: 10px;
@@ -72,6 +71,32 @@
                 transition: 0.3s;
                 color: $cgray;
                 background-color: #deddcd;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .course-price {
+        p {
+            font-size: $mfsh3;
+        }
+
+        &__border {
+            &-first {
+                font-size: $mfsh3;
+            }
+            &-second {
+                font-size: $mfsh3;
+            }
+
+            &-third {
+                font-size: $mfsh2;
+            }
+
+            a {
+                max-width: 250px;
+                font-size: $mfsh3;
             }
         }
     }

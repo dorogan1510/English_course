@@ -73,3 +73,24 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .how-course-works {
+        &__flex-item {
+            max-width: 290px;
+        }
+        h3 {
+            font-size: $mfsh3;
+        }
+
+        p {
+            font-size: $mfsp;
+        }
+
+        .line {
+            &::before {
+                height: 424px;
+            }
+        }
+    }
+}

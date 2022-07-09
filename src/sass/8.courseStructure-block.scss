@@ -58,3 +58,26 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .course-structure {
+        &__flex {
+            flex-direction: column;
+            &-left {
+                margin-bottom: 1rem;
+                width: 100%;
+                font-size: $mfsh3;
+            }
+
+            &-center {
+                width: 100%;
+
+                font-size: $mfsp;
+            }
+
+            &-right {
+                display: none;
+            }
+        }
+    }
+}

@@ -35,4 +35,23 @@ footer {
             margin-right: 1rem;
         }
     }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        p {
+            font-size: $mfsp;
+        }
+
+        .footer__email {
+            a {
+                font-size: $mfsp;
+            }
+        }
+    }
 }

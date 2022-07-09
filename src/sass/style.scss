@@ -91,7 +91,7 @@ $fsh3: 31px;
 $fsp: 18px;
 
 // variables for media queries:
-$mfsh2: 29px;
+$mfsh2: 26px;
 $mfsh3: 20px;
 $mfsp: 14px;
 
@@ -139,7 +139,7 @@ main {
 
 @media (max-width: 768px) {
     %h2 {
-        margin: 10rem 0 3rem;
+        margin: 5rem 0 3rem;
 
         font-size: $mfsh2;
         text-align: center;

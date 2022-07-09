@@ -14,7 +14,6 @@
         }
 
         &-right {
-            margin-left: 4rem;
             h3 {
                 font-size: $fsh2;
                 text-align: center;
@@ -47,5 +46,26 @@
     .know-better__flex {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .know-better {
+        h3 {
+            font-size: $mfsh3;
+        }
+
+        p {
+            font-size: $mfsp;
+        }
+
+        img {
+            max-width: 288px;
+            max-height: 384px;
+        }
+
+        ul {
+            font-size: $mfsp;
+        }
     }
 }

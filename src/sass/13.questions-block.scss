@@ -72,3 +72,16 @@
             inset 0 0 2px rgba(0, 0, 0, 0.3);
     }
 }
+
+@media (max-width: 768px) {
+    .questions {
+        p {
+            font-size: 12px;
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: $mfsp;
+        }
+    }
+}
