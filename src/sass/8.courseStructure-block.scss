@@ -3,10 +3,17 @@
         @extend %h2;
     }
 
+    hr {
+        display: block;
+        margin: 2rem 0;
+
+        height: 3px;
+
+        background-color: $cgray;
+    }
+
     &__flex {
         display: flex;
-
-        margin-bottom: 5rem;
 
         &-left {
             margin-right: 60px;

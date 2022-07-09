@@ -1,0 +1,38 @@
+footer {
+    background-color: $cgray;
+    font-weight: 400;
+
+    p {
+        max-width: 700px;
+        margin: 0rem auto;
+        padding: 3rem 0;
+
+        font-family: $ff2;
+        font-size: $fsp;
+        color: #fff;
+
+        text-align: center;
+    }
+
+    .footer__email {
+        display: block;
+        margin-bottom: 3rem;
+        text-align: center;
+
+        a {
+            color: #fff;
+            font-family: $ff2;
+            font-size: $fsp;
+        }
+    }
+
+    .footer__icons {
+        display: flex;
+        justify-content: center;
+
+        padding-bottom: 3rem;
+        a {
+            margin-right: 1rem;
+        }
+    }
+}

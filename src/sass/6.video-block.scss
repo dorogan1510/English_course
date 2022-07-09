@@ -1,0 +1,17 @@
+.video {
+    h2 {
+        @extend %h2;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__iframe {
+        margin: 0 auto;
+
+        max-width: 900px;
+        height: 500px;
+    }
+}

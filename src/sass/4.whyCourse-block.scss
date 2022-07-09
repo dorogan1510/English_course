@@ -27,7 +27,24 @@
 
         &-line {
             border-left: 2px solid $cgray;
-            height: 250px;
+            height: 300px;
         }
+    }
+}
+
+@media (max-width: 1150px) {
+    .why-course__flex {
+        flex-direction: column;
+    }
+
+    .why-course__flex-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .why-course__flex-line {
+        margin: 3rem 0;
+        height: 2px;
+        background-color: $cgray;
     }
 }

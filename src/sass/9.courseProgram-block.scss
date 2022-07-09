@@ -5,8 +5,7 @@
 
     hr {
         display: block;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin: 2rem 0;
 
         height: 3px;
 
@@ -37,5 +36,14 @@
             list-style: inside;
             margin-bottom: 1rem;
         }
+    }
+}
+
+@media (max-width: 1150px) {
+    .course-program__flex-left {
+        width: 50%;
+    }
+    .course-program__flex-right {
+        width: 50%;
     }
 }

@@ -32,6 +32,7 @@ body {
     width: 100%;
     font-size: 100%;
     font-size: 14px;
+    font-weight: 500;
 }
 
 input,
@@ -73,6 +74,10 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
+
+h2 {
+    line-height: 1;
+}
 /*--------------------*/
 
 $ff1: Bitter;
@@ -85,12 +90,21 @@ $fsh2: 55px;
 $fsh3: 31px;
 $fsp: 18px;
 
+// variables for media queries:
+$mfsh2: 29px;
+$mfsh3: 20px;
+$mfsp: 14px;
+
 %h2 {
-    margin: 5rem 0;
+    margin: 10rem 0 3rem;
 
     font-size: $fsh2;
     text-align: center;
     text-transform: uppercase;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .page {
@@ -99,20 +113,40 @@ $fsp: 18px;
 }
 
 main {
-    margin: 0 10rem;
+    margin: 0 5rem;
 }
 
-@import 'start-block';
-@import 'result-block';
-@import 'advantage-block';
-@import 'whyCourse-block';
-@import 'knowBetter-block';
-@import 'video-block';
-@import 'howCourseWorks-block';
-@import 'courseStructure-block';
-@import 'courseProgram-block';
-@import 'freeModule-block';
-@import 'coursePrice-block';
-@import 'bonus-block';
-@import 'questions-block';
-@import 'footer-block';
+@import '1.start-block';
+@import '2.result-block';
+@import '3.advantage-block';
+@import '4.whyCourse-block';
+@import '5.knowBetter-block';
+@import '6.video-block';
+@import '7.howCourseWorks-block';
+@import '8.courseStructure-block';
+@import '9.courseProgram-block';
+@import '10.freeModule-block';
+@import '11.coursePrice-block';
+@import '12.bonus-block';
+@import '13.questions-block';
+@import '14.footer-block';
+
+@media (max-width: 1150px) {
+    main {
+        margin: 0 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    %h2 {
+        margin: 10rem 0 3rem;
+
+        font-size: $mfsh2;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    main {
+        margin: 0 1rem;
+    }
+}

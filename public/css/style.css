@@ -34,6 +34,7 @@ body {
   width: 100%;
   font-size: 100%;
   font-size: 14px;
+  font-weight: 500;
 }
 
 input,
@@ -82,12 +83,20 @@ h6 {
   font-weight: 400;
 }
 
+h2 {
+  line-height: 1;
+}
+
 /*--------------------*/
-.course-price h2, .free-module h2, .course-program h2, .course-structure h2, .how-course-works h2, .video h2, .know-better h2, .why-course h2, .advantage h2, .result-block h2 {
-  margin: 5rem 0;
+.questions h2, .bonus h2, .course-price h2, .free-module h2, .course-program h2, .course-structure h2, .how-course-works h2, .video h2, .know-better h2, .why-course h2, .advantage h2, .result-block h2 {
+  margin: 10rem 0 3rem;
   font-size: 55px;
   text-align: center;
   text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .page {
@@ -96,11 +105,11 @@ h6 {
 }
 
 main {
-  margin: 0 10rem;
+  margin: 0 5rem;
 }
 
 .start-block {
-  padding: 14rem 0 0 10rem;
+  padding: 10rem 0 0 5rem;
   margin-bottom: 10rem;
   background-image: linear-gradient(90deg, rgba(255, 247, 234, 0.996031689) 0%, rgba(255, 247, 234, 0.55) 100%), linear-gradient(180deg, rgba(255, 247, 234, 0.05) 0%, rgba(255, 247, 234, 0.99) 100%), url(/images/bg.webp?12264728a6fc719fbf9e09f2ba43705d);
   background-size: cover;
@@ -116,16 +125,19 @@ main {
   margin-bottom: 5rem;
   font-family: Raleway;
   font-size: 2rem;
-  max-width: 539px;
+  max-width: 636px;
   color: #856d47;
 }
-.start-block button {
+.start-block a {
+  display: inline-block;
   transition: 0.3s;
   margin-right: 2rem;
   margin-bottom: 5rem;
+  padding: 1rem;
   font-family: Raleway;
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
   color: #fff;
   background-color: #856d47;
   width: 250px;
@@ -133,7 +145,7 @@ main {
   border-radius: 25px;
   border: 0;
 }
-.start-block button:hover {
+.start-block a:hover {
   transition: 0.3s;
   color: #856d47;
   background-color: #deddcd;
@@ -142,7 +154,6 @@ main {
   display: flex;
   justify-content: space-between;
   max-width: 525px;
-  height: 174px;
   background-color: #856d47;
   border-radius: 25px;
 }
@@ -159,7 +170,7 @@ main {
 }
 .start-block__info-left1::before {
   position: absolute;
-  top: 40px;
+  top: 45px;
   right: -25px;
   content: "";
   width: 156px;
@@ -182,7 +193,7 @@ main {
 }
 .start-block__info-right1::before {
   position: absolute;
-  top: 40px;
+  top: 45px;
   right: -20px;
   content: "";
   width: 156px;
@@ -193,24 +204,78 @@ main {
   font-weight: 700;
 }
 
-.result-block .section {
+@media (max-width: 1150px) {
+  .start-block {
+    padding-left: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .start-block {
+    padding: 10rem 1rem 0;
+  }
+  .start-block h1 {
+    font-size: 29px;
+  }
+  .start-block p {
+    font-size: 20px;
+  }
+  .start-block__info {
+    max-width: 300px;
+    flex-direction: column;
+  }
+  .start-block__info-left1::before {
+    right: 10px;
+  }
+  .start-block__info-right1::before {
+    right: 10px;
+  }
+}
+.result-block hr {
+  height: 2px;
+  background-color: #856d47;
+  margin: 1rem 0;
+}
+.result-block__flex {
   display: flex;
   justify-content: space-between;
 }
-.result-block .section__left-side {
-  max-width: 458px;
+.result-block__flex img {
+  height: auto;
+  width: 100%;
 }
-.result-block .section__left-side h3 {
+.result-block__flex-img {
+  width: 650px;
+  height: 456px;
+}
+.result-block__flex-left-side {
+  max-width: 458px;
+  margin-right: 2rem;
+}
+.result-block__flex-left-side h3 {
   margin-bottom: 2rem;
   font-family: Bitter;
   font-size: 31px;
   color: #856d47;
 }
-.result-block .section__left-side p {
+.result-block__flex-left-side p {
+  margin-bottom: 2rem;
   font-family: Raleway;
   font-size: 18px;
 }
 
+@media (max-width: 1150px) {
+  .result-block__flex-img {
+    max-width: 400px;
+    height: auto;
+  }
+  .result-block__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .result-block__flex-left-side {
+    text-align: center;
+  }
+}
 .advantage__flex-section {
   margin-bottom: 40px;
   display: flex;
@@ -252,17 +317,38 @@ main {
 }
 .why-course__flex-line {
   border-left: 2px solid #856d47;
-  height: 250px;
+  height: 300px;
 }
 
+@media (max-width: 1150px) {
+  .why-course__flex {
+    flex-direction: column;
+  }
+  .why-course__flex-item {
+    width: 100%;
+    margin: 0;
+  }
+  .why-course__flex-line {
+    margin: 3rem 0;
+    height: 2px;
+    background-color: #856d47;
+  }
+}
+.know-better {
+  margin: 0 auto;
+}
 .know-better__flex {
   display: flex;
+  justify-content: center;
+}
+.know-better__flex img {
+  max-width: 435px;
+  max-height: 580px;
 }
 .know-better__flex-right {
   margin-left: 4rem;
 }
 .know-better__flex-right h3 {
-  margin-bottom: 2rem;
   font-size: 55px;
   text-align: center;
 }
@@ -283,26 +369,54 @@ main {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 1150px) {
+  .know-better__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .video iframe {
-  display: block;
+  width: 100%;
+  height: 100%;
+}
+.video__iframe {
   margin: 0 auto;
+  max-width: 900px;
+  height: 500px;
 }
 
 .how-course-works__flex {
+  display: flex;
+  flex-direction: column;
+}
+.how-course-works__flex-item {
   position: relative;
   display: flex;
-  margin: 0 0 3rem 10rem;
+  max-width: 560px;
+  margin: 0 auto 3rem;
+}
+.how-course-works__flex-item p {
+  max-width: 800px;
+  font-family: Raleway;
+  font-size: 18px;
+}
+.how-course-works__flex-shape {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  width: 44px;
+  height: 44px;
+  background-color: #856d47;
+  border-radius: 50%;
 }
 .how-course-works__flex-number {
-  margin-right: 2rem;
-  min-width: 44px;
-  max-height: 44px;
   text-align: center;
   font-family: Bitter;
   font-size: 31px;
   color: #fff;
-  background-color: #856d47;
-  border-radius: 50%;
+  z-index: 2;
 }
 .how-course-works__flex h3 {
   margin-bottom: 1rem;
@@ -310,30 +424,28 @@ main {
   font-size: 31px;
   color: #856d47;
 }
-.how-course-works__flex p {
-  max-width: 800px;
-  font-family: Raleway;
-  font-size: 18px;
+.how-course-works__flex .line {
+  position: relative;
 }
-.how-course-works .warning {
-  padding-top: 30px;
-}
-.how-course-works .warning-number {
-  margin-right: 2rem;
-  min-width: 50px;
-  max-height: 50px;
-  text-align: center;
-  font-family: Bitter;
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
+.how-course-works__flex .line::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 400px;
+  top: 30px;
+  left: 21px;
   background-color: #856d47;
-  border-radius: 50%;
+  z-index: 1;
 }
 
+.course-structure hr {
+  display: block;
+  margin: 2rem 0;
+  height: 3px;
+  background-color: #856d47;
+}
 .course-structure__flex {
   display: flex;
-  margin-bottom: 5rem;
 }
 .course-structure__flex-left {
   margin-right: 60px;
@@ -367,8 +479,7 @@ main {
 
 .course-program hr {
   display: block;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
   height: 3px;
   background-color: #856d47;
 }
@@ -393,6 +504,14 @@ main {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 1150px) {
+  .course-program__flex-left {
+    width: 50%;
+  }
+  .course-program__flex-right {
+    width: 50%;
+  }
+}
 .free-module p {
   margin-bottom: 70px;
   font-family: Raleway;
@@ -409,26 +528,24 @@ main {
   font-size: 18px;
   font-weight: 500;
 }
-.free-module__flex button {
+.free-module__flex a {
+  display: inline-block;
+  text-align: center;
   padding: 1rem;
   background-color: #856d47;
   font-family: Raleway;
   font-size: 24px;
   font-weight: 500;
   color: #fff;
-  height: 70px;
   border: 0;
   border-radius: 30px;
 }
-.free-module__flex button:hover {
+.free-module__flex a:hover {
   transition: 0.3s;
   color: #856d47;
   background-color: #deddcd;
 }
 
-.course-price h2 {
-  margin-bottom: 1rem;
-}
 .course-price p {
   margin-bottom: 3rem;
   font-family: Raleway;
@@ -438,12 +555,11 @@ main {
 .course-price__border {
   margin: 0 auto;
   max-width: 690px;
-  max-height: 335px;
   border: 2px solid #856d47;
   border-radius: 10px;
 }
 .course-price__border-first {
-  margin-top: 30px;
+  margin-top: 2rem;
   text-align: center;
   font-family: Raleway;
   font-size: 24px;
@@ -451,7 +567,7 @@ main {
   opacity: 0.8;
 }
 .course-price__border-second {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
   text-align: center;
   font-family: Raleway;
   font-size: 24px;
@@ -465,22 +581,196 @@ main {
   font-size: 31px;
   font-weight: 600;
 }
-.course-price__border button {
+.course-price__border a {
   transition: 0.3s;
   display: block;
-  margin: 30px auto;
-  padding: 1rem;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
   background-color: #856d47;
   font-family: Raleway;
   font-size: 31px;
   font-weight: 500;
   color: #fff;
-  height: 70px;
+  max-width: 400px;
+  text-align: center;
   border: 0;
   border-radius: 30px;
 }
-.course-price__border button:hover {
+.course-price__border a:hover {
   transition: 0.3s;
   color: #856d47;
   background-color: #deddcd;
+}
+
+.bonus__p {
+  margin-bottom: 6rem;
+  font-family: Raleway;
+  font-size: 24px;
+  text-align: center;
+}
+.bonus__flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bonus__flex-item {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 33.33%;
+}
+.bonus__flex-item-shape {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  width: 60px;
+  height: 60px;
+  background-color: #856d47;
+  border-radius: 50%;
+}
+.bonus__flex-item-number {
+  margin: 0 auto;
+  font-family: Bitter;
+  font-size: 24px;
+  color: #fff;
+}
+.bonus__flex-item h3 {
+  margin-bottom: 1rem;
+  font-family: Bitter;
+  font-size: 24px;
+  color: #856d47;
+}
+.bonus__flex-item p {
+  font-family: Raleway;
+  font-size: 16px;
+}
+
+@media (max-width: 1150px) {
+  .bonus__flex-item {
+    width: 50%;
+  }
+}
+.questions {
+  margin-bottom: 10rem;
+}
+.questions p {
+  font-family: Raleway;
+  font-size: 18px;
+}
+.questions details {
+  display: block;
+  background: #fff7ea;
+  max-width: 100%;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  color: #856d47;
+}
+.questions summary::-webkit-details-marker {
+  display: none;
+}
+.questions summary::-moz-list-bullet {
+  list-style-type: none;
+}
+.questions summary::marker {
+  display: none;
+}
+.questions summary {
+  display: block;
+  padding: 0.3em 2em 0.3em 0.9em;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 31px;
+  cursor: pointer;
+  position: relative;
+}
+.questions summary:before {
+  top: 0.4em;
+  right: 0.3em;
+  color: transparent;
+  background: url(/images/down-arrow.png?904b29c357531cab035794eaaedbf6f6) no-repeat 50% 50%/1em 1em;
+  width: 1em;
+  height: 1em;
+  content: "";
+  position: absolute;
+  transition: transform 0.5s;
+}
+.questions details[open] > summary:before {
+  transform: scale(1, -1);
+}
+.questions summary ~ * {
+  padding: 1em;
+}
+.questions details[open] summary ~ * {
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
+}
+@-webkit-keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.questions summary:focus {
+  outline: 0;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #856d47;
+  font-weight: 400;
+}
+footer p {
+  max-width: 700px;
+  margin: 0rem auto;
+  padding: 3rem 0;
+  font-family: Raleway;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+footer .footer__email {
+  display: block;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+footer .footer__email a {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 18px;
+}
+footer .footer__icons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+footer .footer__icons a {
+  margin-right: 1rem;
+}
+
+@media (max-width: 1150px) {
+  main {
+    margin: 0 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .result-block h2, .advantage h2, .why-course h2, .know-better h2, .video h2, .how-course-works h2, .course-structure h2, .course-program h2, .free-module h2, .course-price h2, .bonus h2, .questions h2 {
+    margin: 10rem 0 3rem;
+    font-size: 29px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  main {
+    margin: 0 1rem;
+  }
 }

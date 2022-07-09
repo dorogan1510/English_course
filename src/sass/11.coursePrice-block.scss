@@ -1,7 +1,6 @@
 .course-price {
     h2 {
         @extend %h2;
-        margin-bottom: 1rem;
     }
 
     p {
@@ -17,13 +16,13 @@
         margin: 0 auto;
 
         max-width: 690px;
-        max-height: 335px;
+        // max-height: 335px;
 
         border: 2px solid $cgray;
         border-radius: 10px;
 
         &-first {
-            margin-top: 30px;
+            margin-top: 2rem;
 
             text-align: center;
             font-family: $ff2;
@@ -33,7 +32,7 @@
             opacity: 0.8;
         }
         &-second {
-            margin-bottom: 30px;
+            margin-bottom: 2rem;
             text-align: center;
             font-family: $ff2;
             font-size: 24px;
@@ -50,12 +49,12 @@
             font-weight: 600;
         }
 
-        button {
+        a {
             transition: 0.3s;
 
             display: block;
-            margin: 30px auto;
-            padding: 1rem;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
 
             background-color: $cgray;
             font-family: $ff2;
@@ -63,8 +62,9 @@
             font-weight: 500;
             color: #fff;
 
-            height: 70px;
+            max-width: 400px;
 
+            text-align: center;
             border: 0;
             border-radius: 30px;
 

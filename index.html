@@ -24,9 +24,9 @@
                     Для тех, кто мечтал начать учить английский, но так и не
                     решился
                 </p>
-                <button href="#" type="button">Бесплатный модуль</button>
+                <a href="#id1">Бесплатный модуль</a>
 
-                <button href="#" type="button">Начать сейчас</button>
+                <a href="#id2">Начать сейчас</a>
 
                 <div class="start-block__info">
                     <div class="start-block__info-left">
@@ -46,8 +46,8 @@
                 <div class="result-block">
                     <h2>Какой вы получите результат</h2>
 
-                    <div class="section">
-                        <div class="section__left-side">
+                    <div class="result-block__flex">
+                        <div class="result-block__flex-left-side">
                             <h3>
                                 Будете чувствовать себя комфортно в путешествии
                             </h3>
@@ -58,7 +58,7 @@
                                 на английском языке.
                             </p>
                         </div>
-                        <div class="section__img">
+                        <div class="result-block__flex-img">
                             <img
                                 src="./src/img/section1.webp"
                                 width="650px"
@@ -66,8 +66,9 @@
                             />
                         </div>
                     </div>
-                    <div class="section">
-                        <div class="section__left-side">
+                    <hr />
+                    <div class="result-block__flex">
+                        <div class="result-block__flex-left-side">
                             <h3>Зарабатывайте больше</h3>
                             <p>
                                 По статистике, российские специалисты со знанием
@@ -75,7 +76,7 @@
                                 коллеги без знания языка.
                             </p>
                         </div>
-                        <div class="section__img">
+                        <div class="result-block__flex-img">
                             <img
                                 src="./src/img/section2.webp"
                                 width="650px"
@@ -83,8 +84,10 @@
                             />
                         </div>
                     </div>
-                    <div class="section">
-                        <div class="section__left-side">
+                    <hr />
+
+                    <div class="result-block__flex">
+                        <div class="result-block__flex-left-side">
                             <h3>Сможете рассказать о себе и узнать о других</h3>
                             <p>
                                 Расскажите простыми словами о своей профессии,
@@ -93,7 +96,7 @@
                                 английском языке.
                             </p>
                         </div>
-                        <div class="section__img">
+                        <div class="result-block__flex-img">
                             <img
                                 src="./src/img/section3.webp"
                                 width="650px"
@@ -101,8 +104,10 @@
                             />
                         </div>
                     </div>
-                    <div class="section">
-                        <div class="section__left-side">
+                    <hr />
+
+                    <div class="result-block__flex">
+                        <div class="result-block__flex-left-side">
                             <h3>Сделаете с ребенком домашку по английскому</h3>
                             <p>
                                 Убьем двух зайцев сразу: Сэкономим деньги на
@@ -110,7 +115,7 @@
                                 задания.
                             </p>
                         </div>
-                        <div class="section__img">
+                        <div class="result-block__flex-img">
                             <img
                                 src="./src/img/section4.webp"
                                 width="650px"
@@ -118,15 +123,17 @@
                             />
                         </div>
                     </div>
-                    <div class="section">
-                        <div class="section__left-side">
+                    <hr />
+
+                    <div class="result-block__flex">
+                        <div class="result-block__flex-left-side">
                             <h3>Преодолеете языковой барьер</h3>
                             <p>
                                 Разговор с иностранцами больше не будет вызывать
                                 тахикардию и потные ладошки.
                             </p>
                         </div>
-                        <div class="section__img">
+                        <div class="result-block__flex-img">
                             <img
                                 src="./src/img/section5.webp"
                                 width="650px"
@@ -134,6 +141,7 @@
                             />
                         </div>
                     </div>
+                    <hr />
                 </div>
                 <!-- END OF RESULT BLOCK -->
 
@@ -250,11 +258,7 @@
                 <div class="know-better">
                     <h2>А теперь давайте познакомимся поближе</h2>
                     <div class="know-better__flex">
-                        <img
-                            src="./src/img/ksusha.webp"
-                            width="435px"
-                            height="580px"
-                        />
+                        <img src="./src/img/ksusha.webp" />
                         <div class="know-better__flex-right">
                             <h3>Ксения Сухарева</h3>
                             <p>Куратор курса</p>
@@ -291,58 +295,72 @@
                 <!-- START OF VIDEO BLOCK -->
                 <div class="video">
                     <h2>Настало время пробежаться по курсу</h2>
-                    <iframe
-                        width="900"
-                        height="500"
-                        src="https://www.youtube.com/embed/auU8IXf9SOI"
-                    >
-                    </iframe>
+                    <div class="video__iframe">
+                        <iframe src="https://www.youtube.com/embed/auU8IXf9SOI">
+                        </iframe>
+                    </div>
                 </div>
                 <!-- END OF VIDEO BLOCK -->
 
                 <!-- START OF HOW COURSE WORKS BLOCK -->
                 <div class="how-course-works">
                     <h2>Как проходит курс</h2>
-
                     <div class="how-course-works__flex">
-                        <div class="how-course-works__flex-number line">1</div>
-                        <div>
-                            <h3>Начало недели</h3>
-                            <p>
-                                Каждый понедельник вы получаете все материалы
-                                модуля.
-                            </p>
+                        <div class="how-course-works__flex-item">
+                            <div class="how-course-works__flex-shape line">
+                                <div class="how-course-works__flex-number">
+                                    1
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Начало недели</h3>
+                                <p>
+                                    Каждый понедельник вы получаете все
+                                    материалы модуля.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="how-course-works__flex-item">
+                            <div class="how-course-works__flex-shape">
+                                <div class="how-course-works__flex-number">
+                                    2
+                                </div>
+                            </div>
+                            <div>
+                                <h3>В течение недели</h3>
+                                <p>
+                                    С понедельника по пятницу в удобное для себя
+                                    время вы просматриваете все уроки и
+                                    выполняете домашние задания. К пятнице вы
+                                    должны выполнить все домашние работы и
+                                    переслать их в наш чат в телеграме.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="how-course-works__flex-item">
+                            <div class="how-course-works__flex-shape">
+                                <div class="how-course-works__flex-number">
+                                    3
+                                </div>
+                            </div>
+                            <div>
+                                <h3>Конец недели</h3>
+                                <p>
+                                    В выходные дни будет проводиться прямая
+                                    трансляция, на которой будет сделан
+                                    подробный разбор домашних работ каждого
+                                    участника (запись трансляции будет доступна
+                                    для всех участников курса в любое время, вы
+                                    сами выбираете смотреть её в онлайн режиме
+                                    или в записи).
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="how-course-works__flex">
-                        <div class="how-course-works__flex-number">2</div>
-                        <div>
-                            <h3>В течение недели</h3>
-                            <p>
-                                С понедельника по пятницу в удобное для себя
-                                время вы просматриваете все уроки и выполняете
-                                домашние задания. К пятнице вы должны выполнить
-                                все домашние работы и переслать их в наш чат в
-                                телеграме.
-                            </p>
+                    <div class="how-course-works__flex-item">
+                        <div class="how-course-works__flex-shape">
+                            <div class="how-course-works__flex-number">!</div>
                         </div>
-                    </div>
-                    <div class="how-course-works__flex">
-                        <div class="how-course-works__flex-number">3</div>
-                        <div>
-                            <h3>Конец недели</h3>
-                            <p>
-                                В выходные дни будет проводиться прямая
-                                трансляция, на которой будет сделан подробный
-                                разбор домашних работ каждого участника (запись
-                                трансляции будет доступна для всех участников
-                                курса в любое время, вы сами выбираете смотреть
-                                её в онлайн режиме или в записи).
-                            </p>
-                        </div>
-                    </div>
-                    <div class="how-course-works__flex warning">
-                        <div class="warning-number">!</div>
                         <div>
                             <p>
                                 Не стоит переживать, если во время прохождения
@@ -362,6 +380,7 @@
                         начинке курса
                     </h2>
                     <h2>Структура курса</h2>
+                    <hr />
 
                     <div class="course-structure__flex">
                         <div class="course-structure__flex-left">Модули</div>
@@ -372,6 +391,8 @@
                         </div>
                         <div class="course-structure__flex-right">01</div>
                     </div>
+                    <hr />
+
                     <div class="course-structure__flex">
                         <div class="course-structure__flex-left">Уроки</div>
                         <div class="course-structure__flex-center">
@@ -396,6 +417,7 @@
                         </div>
                         <div class="course-structure__flex-right">02</div>
                     </div>
+                    <hr />
 
                     <div class="course-structure__flex">
                         <div class="course-structure__flex-left">
@@ -410,6 +432,7 @@
                         </div>
                         <div class="course-structure__flex-right">03</div>
                     </div>
+                    <hr />
                 </div>
                 <!-- END OF COURSE STRUCTURE BLOCK -->
 
@@ -505,7 +528,7 @@
 
                 <!-- START OF FREE MODULE BLOCK -->
 
-                <div class="free-module">
+                <div id="id1" class="free-module">
                     <h2>
                         Мы решили сделать первый модуль полностью бесплатным
                     </h2>
@@ -524,14 +547,18 @@
                                 <li>Цифры и числа в английском языке</li>
                             </ol>
                         </div>
-                        <button type="button">Получить первый модуль</button>
+                        <a
+                            href="https://drive.google.com/drive/u/2/folders/1SWA9pMBoqLRyOopZA60S3jx8UwUuuo5K"
+                            target="_blank"
+                            >Получить первый модуль</a
+                        >
                     </div>
                 </div>
                 <!-- END OF FREE MODULE BLOCK -->
 
                 <!-- START OF COURSE PRICE BLOCK -->
 
-                <div class="course-price">
+                <div id="id2" 2 class="course-price">
                     <h2>Стоимость курса</h2>
                     <p>
                         Оплатите курс до конца апреля и получите скидку 3000
@@ -546,21 +573,194 @@
                         <div class="course-price__border-third">
                             Цена со скидкой
                         </div>
-                        <button type="button">Приобрести курс</button>
+                        <a target="_blank" href="">Приобрести курс</a>
                     </div>
                 </div>
                 <!-- END OF COURSE PRICE BLOCK -->
 
                 <!-- START OF BONUS BLOCK -->
-                <div class="bonus"></div>
+                <div class="bonus">
+                    <h2>Бонус</h2>
+                    <p class="bonus__p">
+                        По окончании курса мы подарим вам сборник фраз с
+                        переводом для самых частых ситуаций, которые возникают
+                        во время путешествий. Эти файлы станут для вас
+                        своеобразной шпаргалкой и выручат вас в нужный момент.
+                    </p>
+                    <div class="bonus__flex">
+                        <div class="bonus__flex-item">
+                            <div class="bonus__flex-item-shape">
+                                <div class="bonus__flex-item-number">1</div>
+                            </div>
+                            <div>
+                                <h3>Покупки</h3>
+                                <p>
+                                    Узнайте цену, размер, спросите, где
+                                    примерочная
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bonus__flex-item">
+                            <div class="bonus__flex-item-shape">
+                                <div class="bonus__flex-item-number">2</div>
+                            </div>
+                            <div>
+                                <h3>Заказ в ресторане</h3>
+                                <p>
+                                    Закажите столик, спросите меню, попросите
+                                    счет
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bonus__flex-item">
+                            <div class="bonus__flex-item-shape">
+                                <div class="bonus__flex-item-number">3</div>
+                            </div>
+                            <div>
+                                <h3>Навигация по городу</h3>
+                                <p>
+                                    Узнайте, как добраться до нужного места и
+                                    сколько времени займет дорога
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bonus__flex-item">
+                            <div class="bonus__flex-item-shape">
+                                <div class="bonus__flex-item-number">3</div>
+                            </div>
+                            <div>
+                                <h3>Время</h3>
+                                <p>Узнайте и ответьте который час</p>
+                            </div>
+                        </div>
+                        <div class="bonus__flex-item">
+                            <div class="bonus__flex-item-shape">
+                                <div class="bonus__flex-item-number">5</div>
+                            </div>
+                            <div>
+                                <h3>Заказ такси</h3>
+                                <p>Вызовите такси и узнайте его стоимость</p>
+                            </div>
+                        </div>
+                        <div class="bonus__flex-item">
+                            <div class="bonus__flex-item-shape">
+                                <div class="bonus__flex-item-number">6</div>
+                            </div>
+                            <div>
+                                <h3>Заказ билетов</h3>
+                                <p>
+                                    Купите билеты на поезд или забронируйте
+                                    билеты на самолет
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- END OF BONUS BLOCK -->
 
                 <!-- START OF QUESTIONS BLOCK -->
+                <div class="questions">
+                    <h2>Вопросы и ответы</h2>
+                    <details>
+                        <summary>
+                            МОЖНО ЛИ МНЕ БУДЕТ ПРОЙТИ КУРС С ТЕЛЕФОНА?
+                        </summary>
+                        <p>
+                            Курс можно будет пройти с любого устройства, у
+                            которого есть доступ в интернет, будь то телефон,
+                            компьютер, планшет или ноутбук.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            НУЖНЫ ЛИ КАКИЕ-ТО ПРОГРАММЫ ДЛЯ ПРОХОЖДЕНИЯ КУРСА?
+                        </summary>
+                        <p>
+                            Для доступа к общему чату с куратором курса и
+                            остальными участниками вам нужно будет установить на
+                            ваше устройство Телеграм. Также для просмотра
+                            словарей и домашних работ потребуется Microsoft Word
+                            любой версии.﻿
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            А ЧТО БУДЕТ, ЕСЛИ Я НЕПРАВИЛЬНО СДЕЛАЮ ДОМАШНЮЮ
+                            РАБОТУ?
+                        </summary>
+                        <p>
+                            Каждые выходные в прямом эфире мы будем подробно
+                            разбирать ошибки каждого участника курса и доводить
+                            домашние работы до идеала, пока все не освоят
+                            материал. Эфир также будет доступен в записи. Кроме
+                            того, вы всегда можете написать в общий чат или
+                            лично куратору курса по любым вопросам.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            А ЧТО, ЕСЛИ Я НЕ УСПЕЮ СДЕЛАТЬ ДОМАШНЮЮ РАБОТУ К
+                            ВЫХОДНЫМ?
+                        </summary>
+                        <p>
+                            В таком случае мы не сможем проверить вашу домашнюю
+                            работу, поэтому мы настоятельно просим
+                            придерживаться временных рамок курса.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>МОЖНО ЛИ ОПЛАТИТЬ КУРС ЧАСТЯМИ?</summary>
+                        <p>Нет, курс оплачивается один раз полностью.</p>
+                    </details>
+                </div>
                 <!-- END OF QUESTIONS BLOCK -->
-
-                <!-- START OF FOOTER BLOCK -->
-                <!-- END OF FOOTER BLOCK -->
             </main>
+            <!-- START OF FOOTER BLOCK -->
+            <footer>
+                <p>
+                    Мы постарались ответить на большинство возможных вопросов,
+                    но если мы что-то упустили — не стесняйтесь и свяжитесь с
+                    нами. <br />Мы будем вас ждать!
+                </p>
+
+                <div class="footer__email">
+                    <a href="mailto:easyenglishyou@gmail.com"
+                        >easyenglishyou@gmail.com</a
+                    >
+                </div>
+                <div class="footer__icons">
+                    <a href="https://www.instagram.com/morkoovochka/"
+                        ><img
+                            width="54px"
+                            height="54px"
+                            src="./src/img/instagram.png"
+                            alt=""
+                    /></a>
+                    <a href="https://vk.me/id246389144"
+                        ><img
+                            width="50px"
+                            height="50px"
+                            src="./src/img/vk.png"
+                            alt=""
+                    /></a>
+                    <a href="https://t.me/ksenia459"
+                        ><img
+                            width="50px"
+                            height="50px"
+                            src="./src/img/telegram.png"
+                            alt=""
+                    /></a>
+                    <a href="https://api.whatsapp.com/send?phone=79523715490"
+                        ><img
+                            width="50px"
+                            height="50px"
+                            src="./src/img/whatsapp.png"
+                            alt=""
+                    /></a>
+                </div>
+            </footer>
+
+            <!-- END OF FOOTER BLOCK -->
         </div>
         <!--end of class page-->
     </body>

@@ -1,0 +1,75 @@
+.how-course-works {
+    h2 {
+        @extend %h2;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        &-item {
+            position: relative;
+            display: flex;
+            max-width: 560px;
+            margin: 0 auto 3rem;
+
+            p {
+                max-width: 800px;
+
+                font-family: $ff2;
+                font-size: $fsp;
+            }
+        }
+
+        &-shape {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+
+            margin-right: 2rem;
+
+            width: 44px;
+            height: 44px;
+
+            background-color: $cgray;
+            border-radius: 50%;
+        }
+
+        &-number {
+            text-align: center;
+
+            font-family: $ff1;
+            font-size: $fsh3;
+            color: #fff;
+
+            z-index: 2;
+        }
+
+        h3 {
+            margin-bottom: 1rem;
+
+            font-family: $ff1;
+            font-size: $fsh3;
+            color: $cgray;
+        }
+
+        .line {
+            position: relative;
+
+            &::before {
+                position: absolute;
+
+                content: '';
+                width: 2px;
+                height: 400px;
+
+                top: 30px;
+                left: 21px;
+
+                background-color: $cgray;
+
+                z-index: 1;
+            }
+        }
+    }
+}

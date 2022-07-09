@@ -1,5 +1,5 @@
 .start-block {
-    padding: 14rem 0 0 10rem;
+    padding: 10rem 0 0 5rem;
     margin-bottom: 10rem;
 
     background-image: linear-gradient(
@@ -31,20 +31,23 @@
         font-family: $ff2;
         font-size: 2rem;
 
-        max-width: 539px;
+        max-width: 636px;
 
         color: $cgray;
     }
 
-    button {
+    a {
+        display: inline-block;
         transition: 0.3s;
 
         margin-right: 2rem;
         margin-bottom: 5rem;
+        padding: 1rem;
 
         font-family: $ff2;
         font-size: 18px;
         font-weight: bold;
+        text-align: center;
 
         color: #fff;
         background-color: $cgray;
@@ -66,7 +69,6 @@
         justify-content: space-between;
 
         max-width: 525px;
-        height: 174px;
 
         background-color: $cgray;
         border-radius: 25px;
@@ -88,7 +90,7 @@
 
                 &::before {
                     position: absolute;
-                    top: 40px;
+                    top: 45px;
                     right: -25px;
 
                     content: '';
@@ -120,7 +122,7 @@
 
                 &::before {
                     position: absolute;
-                    top: 40px;
+                    top: 45px;
                     right: -20px;
 
                     content: '';
@@ -133,5 +135,37 @@
                 font-weight: 700;
             }
         }
+    }
+}
+
+@media (max-width: 1150px) {
+    .start-block {
+        padding-left: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .start-block {
+        padding: 10rem 1rem 0;
+
+        h1 {
+            font-size: $mfsh2;
+        }
+
+        p {
+            font-size: $mfsh3;
+        }
+    }
+
+    .start-block__info {
+        max-width: 300px;
+        flex-direction: column;
+    }
+
+    .start-block__info-left1::before {
+        right: 10px;
+    }
+    .start-block__info-right1::before {
+        right: 10px;
     }
 }

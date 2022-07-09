@@ -1,16 +1,21 @@
 .know-better {
+    margin: 0 auto;
     h2 {
         @extend %h2;
     }
 
     &__flex {
         display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 435px;
+            max-height: 580px;
+        }
 
         &-right {
             margin-left: 4rem;
             h3 {
-                margin-bottom: 2rem;
-
                 font-size: $fsh2;
                 text-align: center;
             }
@@ -35,5 +40,12 @@
                 margin-bottom: 2rem;
             }
         }
+    }
+}
+
+@media (max-width: 1150px) {
+    .know-better__flex {
+        flex-direction: column;
+        align-items: center;
     }
 }
