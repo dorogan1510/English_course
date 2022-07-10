@@ -1,5 +1,5 @@
 .start-block {
-    padding: 10rem 0 0 5rem;
+    padding: 10rem 0 0 10rem;
     margin-bottom: 10rem;
 
     background-image: linear-gradient(
@@ -44,33 +44,38 @@
         margin-bottom: 5rem;
     }
 
-    a {
-        display: inline-block;
-        transition: 0.3s;
+    &__flex {
+        display: flex;
 
-        margin-right: 2rem;
-        padding: 1rem;
-
-        font-family: $ff2;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-
-        color: #fff;
-        background-color: $cgray;
-
-        width: 250px;
-        height: 55px;
-
-        border-radius: 25px;
-        border: 0;
-
-        &:hover {
+        a {
+            display: inline-block;
             transition: 0.3s;
-            color: $cgray;
-            background-color: #deddcd;
+
+            margin-right: 2rem;
+            padding: 1rem;
+
+            font-family: $ff2;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+
+            color: #fff;
+            background-color: $cgray;
+
+            width: 250px;
+            height: 55px;
+
+            border-radius: 25px;
+            border: 0;
+
+            &:hover {
+                transition: 0.3s;
+                color: $cgray;
+                background-color: #deddcd;
+            }
         }
     }
+
     &__info {
         display: flex;
         justify-content: space-between;
@@ -153,20 +158,38 @@
 
 @media (max-width: 768px) {
     .start-block {
-        padding: 10rem 1rem 0;
+        padding: 4rem 1rem 0;
+        margin-bottom: 4rem;
 
         h1 {
             font-size: $mfsh2;
+
+            text-align: center;
         }
 
         p {
-            font-size: $mfsh3;
+            text-align: center;
+
+            font-size: $mfsp;
+        }
+
+        &__flex {
+            flex-direction: column;
+
+            align-items: center;
+
+            a {
+                margin-right: 0;
+                font-size: 16px;
+            }
         }
     }
 
     .start-block__info {
         max-width: 250px;
         flex-direction: column;
+
+        margin: 0 auto;
     }
 
     .start-block__info-left1::before {

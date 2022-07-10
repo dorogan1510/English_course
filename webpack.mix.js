@@ -6,5 +6,5 @@ var browserSync = require('browser-sync').create()
 
 browserSync.init({
     watch: true,
-    server: '../english_course',
+    server: '../morkoovochka__english_course',
 })

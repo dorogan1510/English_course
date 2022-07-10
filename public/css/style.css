@@ -109,9 +109,9 @@ main {
 }
 
 .start-block {
-  padding: 10rem 0 0 5rem;
+  padding: 10rem 0 0 10rem;
   margin-bottom: 10rem;
-  background-image: linear-gradient(90deg, rgba(255, 247, 234, 0.996031689) 0%, rgba(255, 247, 234, 0.55) 100%), linear-gradient(180deg, rgba(255, 247, 234, 0.05) 0%, rgba(255, 247, 234, 0.99) 100%), url(/images/bg.webp?12264728a6fc719fbf9e09f2ba43705d);
+  background-image: linear-gradient(90deg, rgba(255, 247, 234, 0.996031689) 0%, rgba(255, 247, 234, 0.55) 100%), linear-gradient(180deg, rgba(255, 247, 234, 0.05) 0%, rgba(255, 247, 234, 0.99) 100%), url(/images/bg.webp?f0ef9de64b45ce0472891fec64c6b43d);
   background-size: cover;
 }
 .start-block h1 {
@@ -134,7 +134,10 @@ main {
 .start-block #second-button {
   margin-bottom: 5rem;
 }
-.start-block a {
+.start-block__flex {
+  display: flex;
+}
+.start-block__flex a {
   display: inline-block;
   transition: 0.3s;
   margin-right: 2rem;
@@ -150,7 +153,7 @@ main {
   border-radius: 25px;
   border: 0;
 }
-.start-block a:hover {
+.start-block__flex a:hover {
   transition: 0.3s;
   color: #856d47;
   background-color: #deddcd;
@@ -216,17 +219,29 @@ main {
 }
 @media (max-width: 768px) {
   .start-block {
-    padding: 10rem 1rem 0;
+    padding: 4rem 1rem 0;
+    margin-bottom: 4rem;
   }
   .start-block h1 {
     font-size: 26px;
+    text-align: center;
   }
   .start-block p {
-    font-size: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .start-block__flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .start-block__flex a {
+    margin-right: 0;
+    font-size: 16px;
   }
   .start-block__info {
     max-width: 250px;
     flex-direction: column;
+    margin: 0 auto;
   }
   .start-block__info-left1::before {
     right: -10px;
@@ -381,6 +396,9 @@ main {
   max-width: 435px;
   max-height: 580px;
 }
+.know-better__flex-right {
+  margin-left: 3rem;
+}
 .know-better__flex-right h3 {
   font-size: 55px;
   text-align: center;
@@ -407,10 +425,14 @@ main {
     flex-direction: column;
     align-items: center;
   }
+  .know-better__flex-right {
+    margin-left: 0;
+  }
 }
 @media (max-width: 768px) {
   .know-better h3 {
-    font-size: 20px;
+    margin-top: 1rem;
+    font-size: 26px;
   }
   .know-better p {
     font-size: 14px;
